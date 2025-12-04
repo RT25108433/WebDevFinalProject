@@ -1,3 +1,58 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5965b;
+}
+
+.navbar{
+	border: 1px solid white;
+}
+
+.navbar {
+    background-color: #F28C28 !important;
+}
+
+.navbar .nav-link,
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar .nav-link:hover {
+    color: white !important; 
+}
+
+.navbar-brand:hover{
+	color:white!important;
+}
+
+.dropdown-menu {
+    background-color: #F5B15B; 
+}
+
+.dropdown-item {
+    color: #333 !important;
+}
+
+.dropdown-item:hover {
+    background-color: #F57B5B;
+    color: white !important;
+}
+
+h1 {
+    color: black; 
+    text-align: center;
+    margin-top: 30px;
+}
+
+h1{
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 .placeholderImage1 {
 	width: 500px;
 	height: 350px;
