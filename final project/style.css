@@ -54,11 +54,30 @@ h1{
 
 
 .placeholderImage1 {
-	width: 500px;
-	height: 350px;
+	width: 200px;
+	height: 200px;
+	float:right;
 }
 
 .placeholderImage2 {
-	width: 500px;
-	height: 350px;
+	width: 200px;
+	height: 200px;
+	float:right;
 }
+
+.section1, .section2 {
+    width: 90%;
+    max-width: 1100px;
+    background-color: white;
+    margin: 40px ;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.section1 {
+    flex-direction: row-reverse;
+}
+
+
+
