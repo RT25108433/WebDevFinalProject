@@ -134,12 +134,13 @@ h1{
 /* // <weight>: Use a value from 100 to 900 */
 /* // <uniquifier>: Use a unique and descriptive class name */
 
-.inter-<uniquifier> {
+.inter{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: <weight>; /*Use preferred*/
   font-style: normal;
 }
+
 
 
 
