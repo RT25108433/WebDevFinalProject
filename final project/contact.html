@@ -64,7 +64,59 @@
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pellentesque condimentum sem, a elementum velit tempor ut. Nam id mauris sit amet massa vestibulum posuere. In justo tellus, pulvinar vel dictum et, sollicitudin non lectus. Nunc sit amet commodo diam. Donec neque arcu, suscipit id purus id, porta dignissim urna. Curabitur iaculis erat vitae hendrerit auctor. In hac habitasse platea dictumst. Quisque vel massa porta felis placerat feugiat in nec velit. Quisque et commodo arcu. 
 		</p>
 	</div>
-	
+
+	<div id="questionnaire">
+			
+		<h2>Please reach out to us if you have any questions</h2>
+			
+			<label>your name</label><br>
+			<input onkeyup="validateData();" id="userName" type="text" required><br>
+			<label>your email</label><br>
+			<input onkeyup="validateData();" id="email" type="email" required><br>
+			<label>your question</label><br>
+			<textarea onkeyup="validateData();" id="question" type="text" rows="4" cols="50" required></textarea><br>
+			<button id="myBtn" onclick="authenticateUser()" disabled>log in</button>
+			
+		</div>
+
+		<div id="success">
+			<p id="message"></p>
+			<button onclick="logout()">log out</button>
+		</div>
+		
+		
+		<script> 
+			document.getElementById("success").style.display = "none";
+			var myTargetElementBtn = document.getElementById("myBtn");
+			var sUserName, sEmail, sQuestion;
+			
+			function validateData(){
+				sUserName = document.getElementById("userName").value;
+				sEmail = document.getElementById("email").value;
+				sQuestion = document.getElementById("question").value;
+				
+				if(sUserName.length > 1 && sEmail.length > 1 && sQuestion.length > 8 ){
+					myTargetElementBtn.disabled = false;
+				}else{
+					myTargetElementBtn.disabled = true;
+				}	
+			}
+			
+			function authenticateUser(){
+				document.getElementById("questionnaire").style.display = "none";
+				document.getElementById("success").style.display = "block";
+				
+				var sMessage = "Thank you for issuing a request " + sUserName + ", someone on our team should respond to your question shortly.";
+				document.getElementById("message").innerHTML = sMessage;
+			}
+			
+			function logout(){
+				document.getElementById("questionnaire").style.display = "block";
+				document.getElementById("success").style.display = "none";
+				document.getElementById("userName").value = "";
+			}
+		</script>
+	  
 	<br>
 
 	<footer class="footer">
@@ -77,6 +129,7 @@
   </body>
 
 </html>
+
 
 
 
