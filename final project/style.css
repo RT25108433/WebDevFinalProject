@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -96,6 +96,7 @@ h1{
 .navbar-nav > li > .dropdown-menu { /* Directing to the dropdown-menu class, which is placed inside the list tag, which in turn is 	placed in the navbar-nav class.*/
     top: 100%; /* Moves the dropdown list directly below its parent heading */
 }
+
 
 
 
