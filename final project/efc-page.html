@@ -54,32 +54,35 @@
 	</nav>
 	<h1> Eco-Friendly Construction </h1>
 	<div id="section1-efc">
-		<marquee behavior="truespeed" scrolldelay="10">
-			<img src="images/road-construction.jpg" alt="road construction" class="efcImg1"> <!-- slixed on Pixabay -->
-			<img src="images/light-bulb.jpg" alt="light bulb" class="efcImg1"> <!-- minka2507 on Pixabay -->
-			<img src="images/construction-site.jpg" alt="construction site" class="efcImg1"> <!-- wal_172619 on Pixabay -->
-			<img src="images/construction-site-2.jpg" alt="construction site 2" class="efcImg1"> <!-- x10 on Pixabay -->
-		</marquee>
+		<div class="scrolling-container-efc">
+			<img src="images/road-construction-efc-cm.jpg" alt="road construction" class="efcImg1"> <!-- slixed on Pixabay -->
+			<img src="images/light-bulb-efc-cm.jpg" alt="light bulb" class="efcImg1"> <!-- minka2507 on Pixabay -->
+			<img src="images/construction-site-efc-cm.jpg" alt="construction site" class="efcImg1"> <!-- wal_172619 on Pixabay -->
+			<img src="images/construction-site-2-efc-cm.jpg" alt="construction site 2" class="efcImg1"> <!-- x10 on Pixabay -->
+			<img src="images/construction-site-3-efc-cm.jpg" alt="construction site 3" class="efcImg1"> <!-- staplerworldtv2 on Pixabay -->
+			<img src="images/construction-efc-cm.jpg" alt="construction" class="efcImg1"> <!-- cegoh on Pixabay -->
+			<img src="images/bulldozer-efc-cm.jpg" alt="bulldozer" class="efcImg1"> <!-- paulbr75 on Pixabay -->
+		</div>
 		<p class="para1">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pellentesque condimentum sem, a elementum velit tempor ut. Nam id mauris sit amet massa vestibulum posuere. In justo tellus, pulvinar vel dictum et, sollicitudin non lectus. Nunc sit amet commodo diam. Donec neque arcu, suscipit id purus id, porta dignissim urna. Curabitur iaculis erat vitae hendrerit auctor. In hac habitasse platea dictumst. Quisque vel massa porta felis placerat feugiat in nec velit. Quisque et commodo arcu. 
+			Eco-Friendly Construction Goals – A key goal of SDG 9 is the construction of infrastructure which is not only resilient, but also reliable, resource efficient and environmentally sustainable. This is not just limited to roads and buildings, but also rail networks, water systems and clean energy infrastructure, all built with clean, modern construction practices and sustainable resources, such as recycled steel and green concrete. SDG 9 also emphasises the importance of supporting developing countries in their transition away from outdated, environmentally dirty practices.<!-- Author: Roberto Travers -->
 		</p>
 	</div>
 	<div id="section2-efc">
-		<img src="placeholder.jpg" alt="placeholder image" class="placeholderImage2"> 
+		<img src="images/solar-panels-efc-cm.png" alt="solar panels" class="efcImg2"> <!-- jamal39 on Pixabay-->
 		<p class="para2">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pellentesque condimentum sem, a elementum velit tempor ut. Nam id mauris sit amet massa vestibulum posuere. In justo tellus, pulvinar vel dictum et, sollicitudin non lectus. Nunc sit amet commodo diam. Donec neque arcu, suscipit id purus id, porta dignissim urna. Curabitur iaculis erat vitae hendrerit auctor. In hac habitasse platea dictumst. Quisque vel massa porta felis placerat feugiat in nec velit. Quisque et commodo arcu. 
+			Achieving These Goals – Advancements in innovation and technology have made these construction goals more achievable than ever. New sustainable materials, such as the above mentioned recycled steel and green concrete, allow for lower emission construction without sacrificing in resilience and reliability. Inclusion of smart energy solutions like the integration of solar panels works to further reduce emissions produced by construction projects. Developing countries are also supported in this endeavour through the transfer of funding, knowledge and technology which can aid in their transition where they may not be able to do so themselves.<!-- Author: Roberto Travers -->
 		</p>
 	</div>
 	
 	<div id="section3-efc">
 		<h1>How to help.</h1>
 		<p>
-			Please sign this petition to help promote eco-friendly development. All we need is your name and email.
+			Please sign this petition to help promote eco-friendly development to achieve our goals. All we need is your name and email.
 		</p>
 		<label>your name</label><br>
 		<input onkeyup="validateData();" id="userName" type="text" required><br>
-		<label>your email<lebel><br>
-		<input onkeyup="validateData();" id="email" type="email" requirted><br>
+		<label>your email</label><br>
+		<input onkeyup="validateData();" id="email" type="email" required><br>
 		<button id="myBtn" onclick="authenticateUser()" disabled>log in</button>
 	</div>
 	<div id="success">
@@ -88,9 +91,9 @@
 	</div>
 	
 	<script> 
-			document.getElementById("success").style.display = "none";
-			var myTargetElementBtn = document.getElementById("myBtn");
-			var sUserName, sEmail;
+		document.getElementById("success").style.display = "none";
+		var myTargetElementBtn = document.getElementById("myBtn");
+		var sUserName, sEmail;
 		
 		function validateData(){
 			sUserName = document.getElementById("userName").value;
@@ -112,9 +115,9 @@
 		}
 		
 		function logout(){
-			document.getElementById("sectrion3").style.display = "block";
+			document.getElementById("sectrion3-efc").style.display = "block";
 			document.getElementById("success").style.display = "none";
-			document.getElementById("userName").vaule = "";
+			document.getElementById("userName").value = "";
 		}
 	</script>
 	
@@ -124,14 +127,13 @@
 	<footer class="footer">
 		<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
 			<div class="me-5 d-none d-lg-block">
-			  <span>Colm Morley</span>
+			  <span>United Nations Copyright, All Rights Reserved</span>
 			</div>
 		</section>
 	</footer>
   </body>
   <!-- Author: Colm Morley -->
 </html>
-
 
 
 
