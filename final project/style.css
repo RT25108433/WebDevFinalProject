@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+/*Importing font from google fonts */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -8,55 +8,56 @@ body {
 }
 
 .navbar{
-	border: 1px solid white;
+	border: 1px solid white; /*Adding borders to the navbar */
 }
 
 .navbar {
-    background-color: #F28C28 !important; /*"!important" is used for specifity, so it overrides conflicting rules */
+    background-color: #F28C28 /*Cadmium Orange */ !important; /*"!important" is used for specifity, so it overrides conflicting rules*/
+	
 }
 
 .navbar .nav-link,
 .navbar-brand {
     color: white !important;
-    font-weight: bold;
+    font-weight: bold; /* text in the nav bar is set to appear white and bold  */
 }
 
 .navbar .nav-link:hover {
-    color: white !important; 
+    color: white !important; /*nav text stays white when hovered upon */
 }
 
 .navbar-brand:hover{
-	color:white!important;
+	color:white!important;/* nav text stays white when hovered upon */
 }
 
 .dropdown-menu {
-    background-color: #F5B15B; 
+    background-color: #F5B15B; /*adding a light yellowish orange shade to the drop down menu */
 }
 
 .dropdown-item {
-    color: #333 !important;
+    color: #333/*charcoal color*/ !important;
 }
 
 .dropdown-item:hover {
-    background-color: #F57B5B;
+    background-color: #F57B5B; /*when hovered upon, the dropdown nav titles change color */
     color: white !important;
 }
 
 h1 {
-    color: black; 
+    color: black; /* adding color and designing alignment for the heading text */
     text-align: center;
     margin-top: 30px;
 }
 
 h1{
-  font-family: "PT Serif", serif;
+  font-family: "PT Serif", serif; /* adding specific font to the heading text */
   font-weight: 400;
   font-style: normal;
 }
 
 
-.placeholderImage1 {
-	width: 200px;
+.placeholderImage1 { 
+	width: 200px; /*image size and width and adding border to both images */
 	height: 200px;
 	border: 2px solid black;
 }
@@ -67,7 +68,7 @@ h1{
 	border: 2px solid black;
 }
 
-.section1, .section2 {
+.section1, .section2 { /* making two sections for content, adding background color, margin and padding for proper alignment and design */
     width: 90%;
     background-color: white;
     margin: 40px ;
@@ -77,7 +78,7 @@ h1{
 }
 
 .section1 {
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; /* instead of displaying the image on the left, the first section will display it on the right as it has been reversed here. */
 }
 
 .section1 img {
@@ -89,7 +90,7 @@ h1{
 }
 
 .para1, .para2{
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif; /*adding font to the paragraph texts */
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -164,6 +165,7 @@ h1{
 .upImg2{
 	width:600px
 }
+
 
 
 
