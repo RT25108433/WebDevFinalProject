@@ -10,7 +10,7 @@ body {
 }
 
 .navbar {
-    background-color: #F28C28 !important;
+    background-color: #F28C28 !important; /*"!important" is used for specifity, so it overrides conflicting rules */
 }
 
 .navbar .nav-link,
@@ -77,6 +77,18 @@ h1{
 .section1 {
     flex-direction: row-reverse;
 }
+
+
+
+.navbar-nav > li {   /* Directing to the <li> tag placed inside the "navbar-nav" class*/
+    position: relative; /* making the positon of the dropdown list relative to its heading bar. */
+}
+
+.navbar-nav > li > .dropdown-menu { /* Directing to the dropdown-menu class, which is placed inside the list tag, which in turn is 	placed in the navbar-nav class.*/
+    top: 100%; /* Moves the dropdown list directly below its parent heading */
+}
+
+
 
 
 
