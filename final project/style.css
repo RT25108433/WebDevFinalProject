@@ -78,6 +78,13 @@ h1{
     flex-direction: row-reverse;
 }
 
+.section1 img {
+    margin-left: 30px;  /*creating space between text and images*/
+}
+
+.section2 img {
+    margin-right: 30px;  
+}
 
 
 .navbar-nav > li {   /* Directing to the <li> tag placed inside the "navbar-nav" class*/
@@ -87,6 +94,7 @@ h1{
 .navbar-nav > li > .dropdown-menu { /* Directing to the dropdown-menu class, which is placed inside the list tag, which in turn is 	placed in the navbar-nav class.*/
     top: 100%; /* Moves the dropdown list directly below its parent heading */
 }
+
 
 
 
