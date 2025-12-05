@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Urban Planning</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+	  <div class="container-fluid">
+		<a class="navbar-brand" href="index.html">Home Page</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		  <ul class="navbar-nav">
+			<li class="nav-item dropdown-industry">
+			  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Industry
+			  </a>
+			  <ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="IndustManufacturing.html">Clean Manufacturing</a></li>
+				<li><a class="dropdown-item" href="IndustRevolution.html">Fourth Industrial Revolution</a></li>
+			  </ul>
+			</li>
+			<li class="nav-item dropdown-innovation">
+			  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Innovation
+			  </a>
+			  <ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="InnovationCaseStudies.html">Case Studies</a></li>
+				<li><a class="dropdown-item" href="InnovationGreenTech.html">Improvement of Green Technologies</a></li>
+			  </ul>
+			</li>
+			<li class="nav-item dropdown-infrastructure">
+			  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Infrastructure
+			  </a>
+			  <ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="efc-page.html">Eco-Friendly Construction</a></li>
+				<li><a class="dropdown-item" href="up-page.html">Urban Planning</a></li>
+			  </ul>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+	<h1> Urban Planning </h1>
+	<div id="section1-up">
+		<img src="images/arq-up-cm.jpg" alt="model" id="upImg1"> 
+		
+		<script>
+			document.getElementById("upImg1").onmousemove = function(){
+			document.getElementById("upImg1").src = "images/arq-2-up-cm.jpg";<!--YOLVING on pixabay-->
+			}
+			document.getElementById("upImg1").onmouseout = function(){
+			document.getElementById("upImg1").src = "images/arq-up-cm.jpg";<!--YOLVING on pixabay-->
+			}
+
+
+		</script>
+		<!-- this causes the image to change when the mouse is over it and to revert when it is gone -->
+
+		
+		<p class="para1">
+			How Urban Planning relates to SDG 9 – All of the advancements in technologies which can improve the lives of people, both directly and indirectly, mean very little if they are not adequately planned for, especially in an urban setting. SDG 9’s goals again, both directly and indirectly, encourage major population centres to invest in strong infrastructure to improve quality of life for those living there. This can come in the form of public transportation, clean water systems, waste management, energy management and access to robust network infrastructure.<!-- Author: Roberto Travers -->
+		</p>
+	</div>
+	<div id="section2-up">
+		<img src="images/architecture-up-cm.jpg" alt="architecture" class="upImg2"> 
+		<p class="para2">
+			Actions to be taken in Urban Planning – SDG 9’s goals steer major population centres towards the idea of the “Smart City”. Smart cities are characterized by their use of Internet of Things sensors, intelligent transportation systems and usage of real-time data to massively improve the efficiency of cities, reduce congestion and overall improve quality of life. It also encourages careful planning and management of industrial zones to minimise pollution and its effect on residents. With clean, energy efficient manufacturing, these industrial zones can be carefully planned to integrate smoothly into urban environments without causing harm to the local community.<!-- Author: Roberto Travers -->
+		</p>
+	</div>
+	<footer class="footer">
+		<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+			<div class="me-5 d-none d-lg-block">
+			  <span>United Nations Copyright, All Rights Reserved</span>
+			</div>
+		</section>
+	</footer>
+  </body>
+  <!-- Author: Colm Morley -->
+</html>

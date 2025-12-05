@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Eco-Friendly Construction</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css"/>
+  </head>
+  
+  <body>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+	  <div class="container-fluid">
+		<a class="navbar-brand" href="index.html">Home Page</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		  <ul class="navbar-nav">
+			<li class="nav-item dropdown-industry">
+			  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Industry
+			  </a>
+			  <ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="IndustManufacturing.html">Clean Manufacturing</a></li>
+				<li><a class="dropdown-item" href="IndustRevolution.html">Fourth Industrial Revolution</a></li>
+			  </ul>
+			</li>
+			<li class="nav-item dropdown-innovation">
+			  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Innovation
+			  </a>
+			  <ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="InnovationCaseStudies.html">Case Studies</a></li>
+				<li><a class="dropdown-item" href="InnovationGreenTech.html">Improvement of Green Technologies</a></li>
+			  </ul>
+			</li>
+			<li class="nav-item dropdown-infrastructure">
+			  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Infrastructure
+			  </a>
+			  <ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="efc-page.html">Eco-Friendly Construction</a></li>
+				<li><a class="dropdown-item" href="up-page.html">Urban Planning</a></li>
+			  </ul>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+	<h1> Eco-Friendly Construction </h1>
+	<div id="section1-efc">
+		<div class="scrolling-container-efc">
+			<img src="images/road-construction-efc-cm.jpg" alt="road construction" class="efcImg1"> <!-- slixed on Pixabay -->
+			<img src="images/light-bulb-efc-cm.jpg" alt="light bulb" class="efcImg1"> <!-- minka2507 on Pixabay -->
+			<img src="images/construction-site-efc-cm.jpg" alt="construction site" class="efcImg1"> <!-- wal_172619 on Pixabay -->
+			<img src="images/construction-site-2-efc-cm.jpg" alt="construction site 2" class="efcImg1"> <!-- x10 on Pixabay -->
+			<img src="images/construction-site-3-efc-cm.jpg" alt="construction site 3" class="efcImg1"> <!-- staplerworldtv2 on Pixabay -->
+			<img src="images/construction-efc-cm.jpg" alt="construction" class="efcImg1"> <!-- cegoh on Pixabay -->
+			<img src="images/bulldozer-efc-cm.jpg" alt="bulldozer" class="efcImg1"> <!-- paulbr75 on Pixabay -->
+		</div>
+		<!-- this allows us to scroll through the images. I originaly wanted the images to move by themselfs using marquee but I didn't like how it looked-->
+		
+		
+		<p class="para1">
+			Eco-Friendly Construction Goals – A key goal of SDG 9 is the construction of infrastructure which is not only resilient, but also reliable, resource efficient and environmentally sustainable. This is not just limited to roads and buildings, but also rail networks, water systems and clean energy infrastructure, all built with clean, modern construction practices and sustainable resources, such as recycled steel and green concrete. SDG 9 also emphasises the importance of supporting developing countries in their transition away from outdated, environmentally dirty practices.<!-- Author: Roberto Travers -->
+		</p>
+	</div>
+	<div id="section2-efc">
+		<img src="images/solar-panels-efc-cm.png" alt="solar panels" class="efcImg2"> <!-- jamal39 on Pixabay-->
+		<p class="para2">
+			Achieving These Goals – Advancements in innovation and technology have made these construction goals more achievable than ever. New sustainable materials, such as the above mentioned recycled steel and green concrete, allow for lower emission construction without sacrificing in resilience and reliability. Inclusion of smart energy solutions like the integration of solar panels works to further reduce emissions produced by construction projects. Developing countries are also supported in this endeavour through the transfer of funding, knowledge and technology which can aid in their transition where they may not be able to do so themselves.<!-- Author: Roberto Travers -->
+		</p>
+	</div>
+	
+	<div id="section3-efc">
+		<h1>How to help.</h1>
+		<p>
+			Please sign this petition to help promote eco-friendly development to achieve our goals. All we need is your name and email.
+		</p>
+		<label>your name</label><br>
+		<input onkeyup="validateData();" id="userName" type="text" required><br>
+		<label>your email</label><br>
+		<input onkeyup="validateData();" id="email" type="email" required><br>
+		<button id="myBtn" onclick="authenticateUser()" disabled>log in</button>
+	</div>
+	<div id="success">
+		<p id="message"></p>
+		<button onclick="logout()">log out</button>
+	</div>
+	
+	<script> 
+		document.getElementById("success").style.display = "none";
+		var myTargetElementBtn = document.getElementById("myBtn");
+		var sUserName, sEmail;
+		
+		function validateData(){
+			sUserName = document.getElementById("userName").value;
+			sEmail = document.getElementById("email").value;
+			
+			if(sUserName.length > 1 && sEmail.length > 1){
+				myTargetElementBtn.disabled = false;
+			}else{
+				myTargetElementBtn.disabled = true;
+			}	
+		}
+		
+		function authenticateUser(){
+			document.getElementById("section3-efc").style.display = "none";
+			document.getElementById("success").style.display = "block";
+			
+			var sMessage = "Thank you for signing the petition " + sUserName + ", we will sending updates via email about the project.";
+			document.getElementById("message").innerHTML = sMessage;
+		}
+		
+		function logout(){
+			document.getElementById("sectrion3-efc").style.display = "block";
+			document.getElementById("success").style.display = "none";
+			document.getElementById("userName").value = "";
+		}
+	</script>
+	<!-- this form allows us to input just a name and email -->
+	
+	
+	
+	<footer class="footer">
+		<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+			<div class="me-5 d-none d-lg-block">
+			  <span>United Nations Copyright, All Rights Reserved</span>
+			</div>
+		</section>
+	</footer>
+  </body>
+  <!-- Author: Colm Morley -->
+</html>
+
+
+

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Page</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary"> <!-- Navigation Bar to show Bootstrap incorporation as per brief -->
+	  <div class="container-fluid">
+		<a class="navbar-brand" href="index.html">Home Page</a> <!-- Code for Home Page button -->
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown"> <!-- Dropdown for Industry pages -->
+		  <ul class="navbar-nav">
+			<li class="nav-item dropdown-industry">
+			  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Industry
+			  </a>
+			  <ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="IndustManufacturing.html">Clean Manufacturing</a></li>
+				<li><a class="dropdown-item" href="IndustRevolution.html">Fourth Industrial Revolution</a></li>
+			  </ul>
+			</li>
+			<li class="nav-item dropdown-innovation"> <!-- Dropdown for Innovation pages -->
+			  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Innovation
+			  </a>
+			  <ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="InnovationCaseStudies.html">Case Studies</a></li>
+				<li><a class="dropdown-item" href="InnovationGreenTech.html">Improvement of Green Technologies</a></li>
+			  </ul>
+			</li>
+			<li class="nav-item dropdown-infrastructure"> <!-- Dropdown for Infrastrcuture pages -->
+			  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Infrastructure
+			  </a>
+			  <ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="efc-page.html">Eco-Friendly Construction</a></li>
+				<li><a class="dropdown-item" href="up-page.html">Urban Planning</a></li>
+			  </ul>
+			</li>
+			<li class="nav-item"> <!-- Contact page button -->
+			  <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+	<h1> Home Page </h1> <!-- Webpage Title -->
+	<div class="section1"> <!-- Code for Paragraph 1 -->
+		<img src="images/UN-RT.jpg" alt="image1" class="placeholderImage1"> <!-- Paragraph 1 image, image credit: Mathias Reding, link: https://www.pexels.com/photo/flag-of-different-countries-un-members-4468974/-->
+		<p class="para1"> <!-- Paragraph 1 text -->
+		What are the Sustainable Development Goals? – The Sustainable Development Goals (SDGs) are a set of 17 plans of global development for peace and prosperity, adopted by all UN member states in 2015 as part of the 2030 Agenda for Sustainable Development. Each SDG sets certain targets for an area in which member states are expected to progress their development to improve the lives of their citizens. These goals range from tackling poverty, hunger, equality, education and industrial development. Each year a report on the global progress of the SDGs is published and presented by the UN Secretary General. 
+		</p>
+	</div>
+	<div class="section2"> <!-- Code for Paragraph 2 -->
+		<img src="images/HomePage1-RT.jpg" alt="image2" class="placeholderImage2"> <!-- Paragraph 2 image, image credit: Anamul Rezwan, link: https://www.pexels.com/photo/two-man-holding-white-paper-1216589/ -->
+		<p class="para2"> <!-- Paragraph 2 text -->
+		What is Sustainable Development Goal 9? – Sustainable Development Goal 9, “Industry, Innovation, Infrastructure”, focuses on building reliant infrastructure, sustainable industrialization and fostering innovation among member states. SDG 9 consists of 8 targets, split among outcome targets and implementation targets. Currently, a significant target of SDG 9 is to improve internet infrastructure in developing countries by increasing access to the 5G network.		</p>
+	</div>
+
+		
+	 <h1>Register for our weekly online newsletter</h1>
+	 <form name="RegForm" onsubmit="return validateForm()" onreset="resetErrors()">
+		
+	<p>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="Name" placeholder="Enter your full name" />
+		<span id="name-error" class="error-message"></span>
+	</p>
+
+		<p>
+			<label for="email">E-mail Address:</label>
+			<input type="text" id="email" name="EMail" placeholder="Enter your email" />
+			<span id="email-error" class="error-message"></span>
+		</p>
+		<p>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="Password" />
+			<span id="password-error" class="error-message"></span>
+		</p>
+
+
+		<p>
+			<input type="checkbox" id="agree" name="Agree" />
+			<label for="agree">The information above is correct</label>
+			<span id="agree-error" class="error-message"></span>
+		</p>
+		<p>
+			<button type="submit">submit</button>
+			<button type="reset">reset</button>
+		</p>
+	</form>
+
+	<script>
+		var bFormIsValid = true;
+		var targetUserName = document.getElementById("name");
+		var targetNameError = document.getElementById("name-error");
+		var targetEmail = document.getElementById("email");
+		var targetEmailError = document.getElementById("email-error");
+		var targetPassword = document.getElementById("password");
+		var targetPasswordError = document.getElementById("password-error");
+
+		
+		function validateForm(){
+			var sUserName = targetUserName.value;
+			var sAddress = targetAddress.value;
+			
+			if(sUserName.length < 3){
+				targetNameError.innerHTML = "Please enter your name properly.";
+				bFormIsValid = false;
+			}else{
+				targetElementError.innerHTML = "error"
+			}
+
+			if(sEmail.length < 3){
+				targetEmailError.innerHTML = "Please enter your email properly.";
+				bFormIsValid = false;
+			}else{
+				targetElementError.innerHTML = "error"
+			}
+			if(sPassword.length < 3){
+				targetEmailError.innerHTML = "Please enter your password properly.";
+				bFormIsValid = false;
+			}else{
+				targetElementError.innerHTML = "error"
+			}
+			 return bFormIsValid;
+		}
+	</script>
+	<!--Colm Morley-->
+	  
+	<footer class="footer"> <!-- Code for the footer, further boostrap implementation-->
+		<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+			<div class="me-5 d-none d-lg-block">
+			  <span>Copyright all rights reserved © ®</span> <!-- Footer text -->
+			</div>
+		</section>
+	</footer>
+  </body>
+  <!-- Website HTML Author: Roberto Travers -->
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
